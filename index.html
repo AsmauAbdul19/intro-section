@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="../intro-section-with-dropdown-navigation-main/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section id="nav-bar" class="flex-con">
+    <img src="../intro-section-with-dropdown-navigation-main/images/logo.svg" id="logo">
+    <div>
+      <ol class="flex-con" style="list-style-type: none;">
+        <li>
+          <a>
+            Features<img src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" class="imgli">
+            <ul style="list-style-type: none;" hidden>
+              <li><img src="../intro-section-with-dropdown-navigation-main/images/icon-todo.svg">Todo List</li>
+              <li><img src="../intro-section-with-dropdown-navigation-main/images/icon-calendar.svg">Calender</li>
+              <li><img src="../intro-section-with-dropdown-navigation-main/images/icon-reminders.svg">Reminder</li>
+              <li><img src="../intro-section-with-dropdown-navigation-main/images/icon-planning.svg">Planning</li>
+            </ul>
+          </a>
+        </li>
+        <li>
+          <a>
+            Company<img src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" class="imgli">
+            <ul style="list-style-type: none;" hidden>
+              <li>History</li>
+              <li>Out Team</li>
+              <li>Blog</li>
+            </ul>
+          </a>
+        </li>
+        <li><a>Careers</a></li>
+        <li><a>About</a></li>
+      </ol>
+    </div>
+
+    <div class="buts">
+      <button id="but1">Login</button>
+      <button id="but2">Register</button>
+    </div>
+  </section>
+
+  <section id="main" class="flex-con">
+    <div id="div1">
+      <h1>Make<br> remote work</h1>
+      <p>Get your team in sync, no matter the location.<br>
+        Streamline processes, create team rituals,<br>
+        and watch productivity soar.
+      </p>
+      <button id="but3">Learn more</button>
+      <div>
+        <img src="../intro-section-with-dropdown-navigation-main/images/client-databiz.svg" class="client">
+        <img src="../intro-section-with-dropdown-navigation-main/images/client-audiophile.svg" class="client">
+        <img src="../intro-section-with-dropdown-navigation-main/images/client-meet.svg" class="client">
+        <img src="../intro-section-with-dropdown-navigation-main/images/client-maker.svg" class="client">
+      </div>
+    </div>
+
+    <div id="div2">
+      <img src="../intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png" id="divimg">
+    </div>
+  </section>
+</body>
+</html>
