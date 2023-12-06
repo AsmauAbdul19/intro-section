@@ -19,13 +19,16 @@
   </style>
 </head>
 <body>
+
+  <!--This is the nav bar section-->
   <section id="nav-bar" class="flex-con">
     <img src="../intro-section-with-dropdown-navigation-main/images/logo.svg" id="logo">
-    <div>
+    <div class="new_nav">
       <ol class="flex-con" style="list-style-type: none;">
         <li>
           <a>
             Features<img src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" class="imgli">
+            <img src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg" class="second">
             <ul style="list-style-type: none;" hidden>
               <li><img src="../intro-section-with-dropdown-navigation-main/images/icon-todo.svg">Todo List</li>
               <li><img src="../intro-section-with-dropdown-navigation-main/images/icon-calendar.svg">Calender</li>
@@ -37,6 +40,7 @@
         <li>
           <a>
             Company<img src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" class="imgli">
+            <img src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg" class="second">
             <ul style="list-style-type: none;" hidden>
               <li>History</li>
               <li>Out Team</li>
@@ -48,21 +52,33 @@
         <li><a>About</a></li>
       </ol>
     </div>
-
-    <div class="buts">
+        <!-- Buttons by the right -->
+    <div class="buts new_nav">
       <button id="but1">Login</button>
       <button id="but2">Register</button>
     </div>
+    
+    <div>
+      <img src="../intro-section-with-dropdown-navigation-main/images/icon-menu.svg" id="menu">
+    </div>
   </section>
 
+  <!-- Image on top mobile view -->
+  <div>
+    <img src="../intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png" id="mobile">
+  </div>
+
+  <!-- Body of the page -->
   <section id="main" class="flex-con">
     <div id="div1">
       <h1>Make<br> remote work</h1>
-      <p>Get your team in sync, no matter the location.<br>
-        Streamline processes, create team rituals,<br>
+      <p>Get your team in sync, no matter the location.
+        Streamline processes, create team rituals,
         and watch productivity soar.
       </p>
       <button id="but3">Learn more</button>
+
+      <!-- clients images -->
       <div>
         <img src="../intro-section-with-dropdown-navigation-main/images/client-databiz.svg" class="client">
         <img src="../intro-section-with-dropdown-navigation-main/images/client-audiophile.svg" class="client">
@@ -71,6 +87,7 @@
       </div>
     </div>
 
+    <!-- Image by the right desktop view -->
     <div id="div2">
       <img src="../intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png" id="divimg">
     </div>
