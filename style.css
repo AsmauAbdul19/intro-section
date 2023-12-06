@@ -3,11 +3,6 @@ body{
     font-family: 'Epilogue', sans-serif;
 }
 
-.flex-con{
-    display: flex;
-    align-items: center;
-}
-
 #logo{
     padding: 20px;
     margin-left: 15px;
@@ -19,12 +14,21 @@ ol li{
     color: hsl(0, 0%, 41%);
 }
 
+a:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
+}
+
+.new_nav{
+    display: none;
+}
+
 .imgli{
     padding-left: 5px;
 }
 
 .buts{
-    margin-left: 45rem;
+    margin-left: 40rem;
 }
 
 #but1{
@@ -32,6 +36,18 @@ ol li{
     color: hsl(0, 0%, 41%);
     background-color: hsl(0, 0%, 98%);
     padding-right: 15px;
+}
+
+#but1:hover{
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+#but2:hover{
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+    border: solid hsl(0, 0%, 8%) 2px;
+    cursor: pointer;
 }
 
 #but2{
@@ -45,20 +61,14 @@ ol li{
     color: hsl(0, 0%, 41%);
 }
 
-#div1{
-    width: 50%;
-    padding-left: 10rem;
-    margin-top: 2rem;
-}
-
-#div2{
-    padding-top: 3rem;
-    padding-right: 10rem;
+#menu{
+    position: absolute;
+    left: 43.5rem;
+    top: 20px;
 }
 
 #divimg{
-    width: 30rem;
-    height: 33rem;
+    display: none;
 }
 
 h1{
@@ -69,6 +79,7 @@ h1{
 div p{
     line-height: 25px;
     color: hsl(0, 0%, 41%);
+    padding-right: 15rem;
     padding-bottom: 2rem;
 }
 
@@ -86,6 +97,63 @@ div p{
     margin-bottom: 5rem;
 }
 
+#but3:hover{
+    border: solid hsl(0, 0%, 8%) 1px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
 .client{
     padding-right: 35px;
+}
+
+@media screen and (min-width: 376px) {
+    .flex-con{
+        display: flex;
+        align-items: center;
+    }
+
+    #divimg{
+        display: block;
+        padding-left: 3rem;
+        width: 30rem;
+        height: 33rem;
+    }
+
+    #div2 img{
+        visibility: visible;
+    }
+    
+    .second{
+        visibility: hidden;
+        color: hsl(0, 0%, 8%);
+    }
+
+    .imgli:hover{
+        visibility: hidden;
+    }
+
+    #mobile{
+        display: none;
+    }
+    
+    #div1{
+        width: 50%;
+        padding-left: 10rem;
+        margin-top: 2rem;
+    }
+
+    #div2{
+        padding-top: 3rem;
+        padding-right: 10rem;
+    }
+
+    .new_nav{
+        display: block;
+    }
+
+    #menu{
+        display: none;
+    }
 }
