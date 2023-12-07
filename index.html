@@ -54,13 +54,53 @@
     </div>
         <!-- Buttons by the right -->
     <div class="buts new_nav">
-      <button id="but1">Login</button>
-      <button id="but2">Register</button>
+      <button class="but1">Login</button>
+      <button class="but2">Register</button>
     </div>
     
-    <div>
-      <img src="../intro-section-with-dropdown-navigation-main/images/icon-menu.svg" id="menu">
+    <!--Mobile view menu bar-->
+    <div class="menu_drop_down">
+      <button style="border: none;"><img src="../intro-section-with-dropdown-navigation-main/images/icon-menu.svg" id="menu"></button>
+      <div class="menu_nav">
+        <button style="border: none; background-color: hsl(0, 0%, 98%);"  id="close_but">
+          <img src="../intro-section-with-dropdown-navigation-main/images/icon-close-menu.svg" id="close_menu">
+        </button>
+        <ol style="list-style-type: none;">
+          <li>
+            <a class="drop">
+              Features<img src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" class="imgli">
+              <img src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg" class="second">
+              <ul style="list-style-type: none;" class="menudownlist">
+                <li><img src="../intro-section-with-dropdown-navigation-main/images/icon-todo.svg">Todo List</li>
+                <li><img src="../intro-section-with-dropdown-navigation-main/images/icon-calendar.svg">Calender</li>
+                <li><img src="../intro-section-with-dropdown-navigation-main/images/icon-reminders.svg">Reminder</li>
+                <li><img src="../intro-section-with-dropdown-navigation-main/images/icon-planning.svg">Planning</li>
+              </ul>
+            </a>
+          </li>
+          <li>
+            <a class="drop">
+              Company<img src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" class="imgli">
+              <img src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg" class="second">
+              <ul style="list-style-type: none;" class="menudownlist">
+                <li>History</li>
+                <li>Out Team</li>
+                <li>Blog</li>
+              </ul>
+            </a>
+          </li>
+          <li><a>Careers</a></li>
+          <li><a>About</a></li>
+        </ol>
+        <div class="nav_buts">
+          <button class="but1">Login</button>
+        </div>
+        <div class="nav_buts">
+          <button class="but2" id="reg">Register</button>
+        </div>
+      </div>
     </div>
+
   </section>
 
   <!-- Image on top mobile view -->
@@ -71,8 +111,8 @@
   <!-- Body of the page -->
   <section id="main" class="flex-con">
     <div id="div1">
-      <h1>Make<br> remote work</h1>
-      <p>Get your team in sync, no matter the location.
+      <h1>Make<br id="headerbr"> remote work</h1>
+      <p>Get your team in sync, no matter your location.
         Streamline processes, create team rituals,
         and watch productivity soar.
       </p>
