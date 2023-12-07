@@ -61,6 +61,10 @@ a:hover{
     color: hsl(0, 0%, 41%);
 }
 
+.downlist{
+    display: none;
+}
+
 #menu{
     position: absolute;
     left: 43.5rem;
@@ -124,14 +128,42 @@ div p{
     #div2 img{
         visibility: visible;
     }
-    
+
+    a:hover{
+        margin-right: 5px;
+        margin-top: 2rem;
+    }
+
+    a:hover .downlist{
+        display: block;
+        background-color: hsl(0, 0%, 100%);
+        margin-top: 0;
+        margin-left: -3rem;
+        margin-bottom: -9rem;
+        padding: 15px 20px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px;
+    }
+
+    a:hover .imgli{
+        display: none;
+    }
+
     .second{
-        visibility: hidden;
+        display: none;
+    }
+
+    a:hover .second{
+        display: inline;
         color: hsl(0, 0%, 8%);
     }
 
-    .imgli:hover{
-        visibility: hidden;
+    .downlist li{
+        padding: 5px;
+    }
+
+    .downlist img{
+        padding-right: 10px;
     }
 
     #mobile{
