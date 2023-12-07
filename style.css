@@ -5,7 +5,6 @@ body{
 
 #logo{
     padding: 20px;
-    margin-left: 15px;
 }
 
 ol li{
@@ -31,26 +30,26 @@ a:hover{
     margin-left: 40rem;
 }
 
-#but1{
+.but1{
     border: none;
     color: hsl(0, 0%, 41%);
     background-color: hsl(0, 0%, 98%);
     padding-right: 15px;
 }
 
-#but1:hover{
+.but1:hover{
     color: hsl(0, 0%, 8%);
     cursor: pointer;
 }
 
-#but2:hover{
+.but2:hover{
     color: hsl(0, 0%, 8%);
     background-color: hsl(0, 0%, 98%);
     border: solid hsl(0, 0%, 8%) 2px;
     cursor: pointer;
 }
 
-#but2{
+.but2{
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
@@ -65,10 +64,69 @@ a:hover{
     display: none;
 }
 
+#close_but{
+    padding-left: 12rem;
+    padding-top: 15px;
+}
+
 #menu{
     position: absolute;
-    left: 43.5rem;
+    left: 20rem;
     top: 20px;
+}
+
+.menu_nav{
+    display: none;
+    width: 11.5rem;
+    height: 50rem;
+    background-color: hsl(0, 0%, 98%);
+    padding-right: 3rem;
+    left: 8.5rem;
+    top: 0;
+    position: absolute;
+    box-shadow: -10rem 0px 0px 0px hsla(0, 0%, 0%, .7);
+}
+
+.menu_drop_down li{
+    padding-bottom: 15px;
+}
+
+.menu_drop_down:hover .menu_nav{
+    display: block;
+}
+
+.nav_buts{
+    text-align: center;
+    padding: 10px;
+}
+
+.nav_buts button{
+    margin-left: 1rem;
+    width: 13rem;
+}
+
+a:hover .menudownlist{
+        display: block;
+        background-color: hsl(0, 0%, 100%);
+        margin-left: -3rem;
+        padding: 15px 30px;
+    }
+
+a:hover .imgli{
+    display: none;
+}
+
+.second{
+    display: none;
+}
+
+a:hover .second{
+    display: inline;
+    color: hsl(0, 0%, 8%);
+}
+
+#mobile{
+    width: 100%;
 }
 
 #divimg{
@@ -76,15 +134,20 @@ a:hover{
 }
 
 h1{
-    font-size: 76px;
+    font-size: 36px;
     font-weight: 700;
+    text-align: center;
+}
+
+#headerbr{
+    display: none;
 }
 
 div p{
     line-height: 25px;
     color: hsl(0, 0%, 41%);
-    padding-right: 15rem;
-    padding-bottom: 2rem;
+    text-align: center;
+    padding: 10px;
 }
 
 #but3{
@@ -92,13 +155,14 @@ div p{
     padding-right: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-left: 8rem;
     border-radius: 10px;
     border: none;
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 98%);
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 #but3:hover{
@@ -109,10 +173,15 @@ div p{
 }
 
 .client{
-    padding-right: 35px;
+    width: 4.5rem;
+    padding: 7px;
 }
 
+/* Media for desktop view */
 @media screen and (min-width: 376px) {
+    #logo{
+        margin-left: 5px;
+    }
     .flex-con{
         display: flex;
         align-items: center;
@@ -139,7 +208,7 @@ div p{
         background-color: hsl(0, 0%, 100%);
         margin-top: 0;
         margin-left: -3rem;
-        margin-bottom: -9rem;
+        margin-bottom: -8.2rem;
         padding: 15px 20px;
         border-radius: 10px;
         box-shadow: 1px 1px 10px;
@@ -166,6 +235,10 @@ div p{
         padding-right: 10px;
     }
 
+    .menu_nav{
+        display: none;
+    }
+
     #mobile{
         display: none;
     }
@@ -181,11 +254,38 @@ div p{
         padding-right: 10rem;
     }
 
+    #but3{
+        margin-left: 0;
+        margin-bottom: 5rem;
+    }
+
+    h1{
+        font-size: 76px;
+        font-weight: 700;
+        text-align: start;
+    }
+
+    #headerbr{
+        display: block;
+    }
+
+    div p{
+        line-height: 25px;
+        color: hsl(0, 0%, 41%);
+        text-align: start;
+        padding-right: 10rem;
+        padding-bottom: 2rem;
+    }
+
     .new_nav{
         display: block;
     }
 
     #menu{
         display: none;
+    }
+
+    .client{
+        padding-right: 35px;
     }
 }
