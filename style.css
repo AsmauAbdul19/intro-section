@@ -105,12 +105,26 @@ a:hover{
     width: 13rem;
 }
 
+.menudownlist{
+    display: none;
+}
+
 a:hover .menudownlist{
-        display: block;
-        background-color: hsl(0, 0%, 100%);
-        margin-left: -3rem;
-        padding: 15px 30px;
-    }
+    display: block;
+    padding: 5px;
+}
+
+a:hover .menudownlist li{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 45px;
+}
+
+
+a:hover .menudownlist img{
+    padding-right: 5px;
+}
 
 a:hover .imgli{
     display: none;
